@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap');
+
+* {
+    font-family: "Montserrat", serif;
+}
+
+:root {
+    --text-color: #757575;
+    --white-bg-color: #FBFBFB;
+    --whitebg-text-color: #000;
+    --white-card-color: #F5F5F4;
+    --black-bg-color: #0F0F0F;
+    --blackbg-text-color: #fff;
+}
+
+body[theme="black"] {
+    background-color: var(--black-bg-color);
+}
+
+body[theme="black"] main{
+    color: var(--blackbg-text-color);
+}
+
+body[theme="black"] .menu ul li:hover {
+    font-weight: 600;
+    color: var(--blackbg-text-color);
+}
+
+body[theme="black"] .card{
+    border: 2px solid white;
+}
+
+body[theme="black"] .contact-btn {
+    border: 1px solid white;
+}
+
+body[theme="black"] .mobile-menu {
+    background-color: var(--black-bg-color);
+}
+
+body[theme="white"] {
+    background-color: var(--white-bg-color);
+}
+
+body[theme="white"] main{
+    color: var(--whitebg-text-color);
+}
+
+body[theme="white"] .menu ul li:hover {
+    font-weight: 600;
+    color: var(--white-text-color);
+}
+
+body[theme="white"] .card,
+body[theme="white"] .contact-btn{
+    background-color: var(--black-bg-color);
+    color: var(--blackbg-text-color);
+}
+
+body[theme="white"] .mobile-menu {
+    background-color: var(--white-bg-color);
+}
+
+h3.logo {
+    font-family: "Noto Sans JP", serif;
+}
+
+.menu ul li,
+.project {
+    color: var(--text-color);
+}
+
+.animate-box {
+    animation: scrollLeft 8s infinite linear;
+}
+
+@keyframes scrollLeft {
+    to {
+        transform: translateX(calc(-100% - 18px));
+    }
+}

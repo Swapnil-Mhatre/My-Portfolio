@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapnil Mhatre - Web developer</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body theme="white">
+    <main>
+        <div class="container mx-auto">
+            <header class="sticky top-0 z-20 h-[76px] backdrop-blur-xs">
+                <nav class="navbar flex justify-between items-center py-4 px-3">
+                    <h3 class="italic font-extrabold text-2xl tracking-tighter leading-none logo">Swapnil <br> Mhatre
+                    </h3>
+                    <div class="menu hidden md:block">
+                        <ul class="flex gap-8 font-medium md:text-xl">
+                            <li><a href="#Home">Home</a></li>
+                            <li><a href="#About">About</a></li>
+                            <li><a href="#Projects">Projects</a></li>
+                            <li><a href="#Contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex gap-5 items-center text-2xl">
+                        <div id="bg-mode"><i class="ri-sun-line"></i></div>
+                        <div id="hamberger-menu" class="md:hidden">
+                            <i class="ri-menu-3-line"></i>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <nav class="mobile-menu w-full h-screen py-4 px-3 fixed z-30 top-0 left-0 translate-x-[-100%] md:hidden">
+                <div class="w-full flex items-center justify-between text-2xl">
+                    <h3 class="italic font-extrabold text-2xl tracking-tighter leading-none logo">Swapnil <br> Mhatre
+                    </h3>
+                    <i id="closeBtn" class="ri-close-large-line"></i>
+                </div>
+                <ul class="flex flex-col gap-4 font-semibold text-4xl mt-20">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+                <a href="mailto:swapnilmhatre889@gmail.com"
+                    class="inline-block mt-50 text-xl font-medium leading-none">email me at <br> <span
+                        class="underline">swapnilmhatre889@gmail.com</span></a>
+            </nav>
+            <section style="height: calc(100vh - 76px);" class="w-full pl-4" id="Home">
+                <div class="h-full w-full flex items-center md:justify-center">
+                    <div>
+                        <h5 class="intro text-xl tracking-tight mb-1 overflow-hidden md:text-2xl"><span
+                                class="inline-block">Hi, I'm</span></h5>
+                        <h1 class="intro text-4xl font-medium tracking-tight overflow-hidden md:text-5xl"><span
+                                class="inline-block">Swapnil Mhatre</span></h1>
+                        <h3 class="intro text-5xl font-bold tracking-tight my-2 overflow-hidden md:text-6xl"><span
+                                class="inline-block">Front End Developer</span></h3>
+                        <ul class="text-3xl flex gap-8 my-8 ">
+                            <li><a href="https://www.instagram.com/swap_nil_mhatre21/" target="_blank"><i
+                                        class="ri-instagram-fill"></i></a></li>
+                            <li><a href="https://github.com/Swapnil-Mhatre" target="_blank"><i
+                                        class="ri-github-fill"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/swapnil-mhatre-5160b3296/" target="_blank"><i
+                                        class="ri-linkedin-box-fill"></i></a></li>
+                        </ul>
+                        <a href="#Contact"><button
+                                class="contact-btn hover:cursor-pointer py-2 px-4 rounded-full text-xl">Let's
+                                Talk</button></a>
+                    </div>
+                </div>
+            </section>
+            <section class="px-4 py-10" id="About">
+                <h1 class="heading-title text-4xl font-bold my-8 md:my-12 lg:my-10">About</h1>
+                <div class="leading-5 md:w-1/2 mx-auto">
+                    <ul class="border-l px-4 lg:text-lg">
+                        <li>I'm passionate about</li>
+                        <li>building responsive and user-friendly web application.</li>
+                        <li>Learn new technologies</li>
+                        <li>improve problem solving skills</li>
+                        <li>collaborate in a dynamic development environment</li>
+                        <li>create impactful digital solutions.</li>
+                    </ul>
+                </div>
+                <h2 class="text-3xl text-blue-600 font-bold my-10 text-center lg:my-20 lg:text-5xl">Skills</h2>
+                <div class="horizontal-scroll flex gap-5 overflow-x-hidden">
+                    <div class="cards flex gap-5 animate-box">
+                        <div
+                            class="card w-fit flex flex-col items-center justify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" alt=""
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl">HTML</h4>
+                        </div>
+                        <div
+                            class="card w-fit flex flex-col items-center justify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt=""
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl">CSS</h4>
+                        </div>
+                        <div
+                            class="card w-fit flex flex-col items-center justify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt=""
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl">JS</h4>
+                        </div>
+                        <div
+                            class="card w-fit flex flex-col items-center j/ustify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://cdn-icons-png.flaticon.com/128/15466/15466163.png" alt=""
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl">Git</h4>
+                        </div>
+                        <div
+                            class="card w-fit flex flex-col items-center justify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt=""
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl text-center">Tailwind <br> CSS</h4>
+                        </div>
+                        <div
+                            class="card w-fit flex flex-col items-center justify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://svgmix.com/uploads/29bd84-gsap-greensock.svg" alt=""
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl">GSAP</h4>
+                        </div>
+                        <div
+                            class="card w-fit flex flex-col items-center justify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://icons.veryicon.com/png/o/business/vscode-program-item-icon/webpack-2.png"
+                                    alt="" class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl">Webpack</h4>
+                        </div>
+                    </div>
+                    <div class="cards flex gap-5 animate-box">
+                        <div
+                            class="card w-fit flex flex-col items-center justify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" alt=""
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl">HTML</h4>
+                        </div>
+                        <div
+                            class="card w-fit flex flex-col items-center justify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt=""
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl">CSS</h4>
+                        </div>
+                        <div
+                            class="card w-fit flex flex-col items-center justify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt=""
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl">JS</h4>
+                        </div>
+                        <div
+                            class="card w-fit flex flex-col items-center justify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://cdn-icons-png.flaticon.com/128/15466/15466163.png" alt=""
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl">Git</h4>
+                        </div>
+                        <div
+                            class="card w-fit flex flex-col items-center justify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt=""
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl text-center">Tailwind <br> CSS</h4>
+                        </div>
+                        <div
+                            class="card w-fit flex flex-col items-center justify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://svgmix.com/uploads/29bd84-gsap-greensock.svg" alt=""
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl">GSAP</h4>
+                        </div>
+                        <div
+                            class="card w-fit flex flex-col items-center justify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://icons.veryicon.com/png/o/business/vscode-program-item-icon/webpack-2.png"
+                                    alt="" class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl">Webpack</h4>
+                        </div>
+                    </div>
+                    <div class="cards flex gap-5 animate-box">
+                        <div
+                            class="card w-fit flex flex-col items-center justify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" alt=""
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl">HTML</h4>
+                        </div>
+                        <div
+                            class="card w-fit flex flex-col items-center justify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt=""
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl">CSS</h4>
+                        </div>
+                        <div
+                            class="card w-fit flex flex-col items-center justify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt=""
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl">JS</h4>
+                        </div>
+                        <div
+                            class="card w-fit flex flex-col items-center justify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://cdn-icons-png.flaticon.com/128/15466/15466163.png" alt=""
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl">Git</h4>
+                        </div>
+                        <div
+                            class="card w-fit flex flex-col items-center justify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt=""
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl text-center">Tailwind <br> CSS</h4>
+                        </div>
+                        <div
+                            class="card w-fit flex flex-col items-center justify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://svgmix.com/uploads/29bd84-gsap-greensock.svg" alt=""
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl">GSAP</h4>
+                        </div>
+                        <div
+                            class="card w-fit flex flex-col items-center justify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://icons.veryicon.com/png/o/business/vscode-program-item-icon/webpack-2.png"
+                                    alt="" class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl">Webpack</h4>
+                        </div>
+                    </div>
+                    <div class="cards flex gap-5 animate-box">
+                        <div
+                            class="card w-fit flex flex-col items-center justify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" alt=""
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl">HTML</h4>
+                        </div>
+                        <div
+                            class="card w-fit flex flex-col items-center justify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt=""
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl">CSS</h4>
+                        </div>
+                        <div
+                            class="card w-fit flex flex-col items-center justify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt=""
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl">JS</h4>
+                        </div>
+                        <div
+                            class="card w-fit flex flex-col items-center justify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://cdn-icons-png.flaticon.com/128/15466/15466163.png" alt=""
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl">Git</h4>
+                        </div>
+                        <div
+                            class="card w-fit flex flex-col items-center justify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt=""
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl text-center">Tailwind <br> CSS</h4>
+                        </div>
+                        <div
+                            class="card w-fit flex flex-col items-center justify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://svgmix.com/uploads/29bd84-gsap-greensock.svg" alt=""
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl">GSAP</h4>
+                        </div>
+                        <div
+                            class="card w-fit flex flex-col items-center justify-center gap-3 rounded-tl-2xl rounded-br-2xl rounded-tr-lg py-3 px-6 lg:py-6 lg:px-8">
+                            <div class="h-16 w-16 lg:h-24 lg:w-24">
+                                <img src="https://icons.veryicon.com/png/o/business/vscode-program-item-icon/webpack-2.png"
+                                    alt="" class="h-full w-full object-cover">
+                            </div>
+                            <h4 class="font-semibold lg:text-xl">Webpack</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="min-h-screen w-full px-4 py-10" id="Projects">
+                <h1 class="heading-title text-4xl font-bold my-8 md:my-12 lg:my-10">Projects</h1>
+                <div class="projects grid grid-cols-1 gap-3 md:grid-cols-2 items-center">
+                    <div class="project border rounded-sm p-1">
+                        <div class="h-60 w-full lg:h-70 xl:h-85">
+                            <a href="https://swapnil-mhatre.github.io/Porsche-911-GT3-RS-Landing-Page/">
+                                <img class="w-full h-full object-cover rounded-sm"
+                                    src="./Assets/Images/Porsche 911 GT3 RS.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="px-3">
+                            <div class="description flex justify-between my-2">
+                                <p class="text-lg">Porsche 911 GT3 RS Clone</p>
+                                <ul class="flex gap-3 text-xl">
+                                    <li><a href="https://github.com/Swapnil-Mhatre/Porsche-911-GT3-RS-Landing-Page"><i
+                                                class="ri-github-fill"></i></a></li>
+                                    <li><a href="https://swapnil-mhatre.github.io/Porsche-911-GT3-RS-Landing-Page/"><i
+                                                class="ri-share-box-line"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="tags flex gap-1 flex-wrap">
+                                <div class="w-fit flex items-center gap-1 border py-1 px-2 rounded-full">
+                                    <div class="h-3 w-3">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" alt=""
+                                            class="h-full w-full object-cover">
+                                    </div>
+                                    <h4 class="font-semibold text-xs">HTML</h4>
+                                </div>
+                                <div class="w-fit flex items-center gap-1 border py-1 px-2 rounded-full">
+                                    <div class="h-3 w-3">
+                                        <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt=""
+                                            class="h-full w-full object-cover">
+                                    </div>
+                                    <h4 class="font-semibold text-xs">CSS</h4>
+                                </div>
+                            </div>
+                            <div class="info text-sm mt-3">Porsche 911 GT3 RS Model Static Landing Page with
+                                Responsiveness for mobile and other devices, it's a Basic Html and Css Landing page just
+                                for practice, it was my first project made it responsive afterwards.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project border rounded-sm p-1">
+                        <div class="h-60 w-full lg:h-70 xl:h-85">
+                            <a href="https://swapnil-mhatre.github.io/Premier/">
+                                <img class="w-full h-full object-cover rounded-sm" src="./Assets/Images/Premier.png"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="px-3">
+                            <div class="description flex justify-between my-2">
+                                <p class="text-lg">Premier Clone</p>
+                                <ul class="flex gap-3 text-xl">
+                                    <li><a href="https://github.com/Swapnil-Mhatre/Premier"><i
+                                                class="ri-github-fill"></i></a></li>
+                                    <li><a href="https://swapnil-mhatre.github.io/Premier/"><i
+                                                class="ri-share-box-line"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="tags flex gap-1 flex-wrap">
+                                <div class="w-fit flex items-center gap-1 border py-1 px-2 rounded-full">
+                                    <div class="h-3 w-3">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" alt=""
+                                            class="h-full w-full object-cover">
+                                    </div>
+                                    <h4 class="font-semibold text-xs">HTML</h4>
+                                </div>
+                                <div class="w-fit flex items-center gap-1 border py-1 px-2 rounded-full">
+                                    <div class="h-3 w-3">
+                                        <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt=""
+                                            class="h-full w-full object-cover">
+                                    </div>
+                                    <h4 class="font-semibold text-xs">CSS</h4>
+                                </div>
+                            </div>
+                            <div class="info text-sm mt-3">Premier Clone made with Html and Css as a practise project by
+                                Sheriyan Coding School.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project border rounded-sm p-1">
+                        <div class="h-60 w-full lg:h-70 xl:h-85">
+                            <a href="https://swapnil-mhatre.github.io/tic-tac-toe/">
+                                <img class="w-full h-full object-cover rounded-sm" src="./Assets/Images/Tic Tac Toe.png"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="px-3">
+                            <div class="description flex justify-between my-2">
+                                <p class="text-lg">Tic Tac Toe</p>
+                                <ul class="flex gap-3 text-xl">
+                                    <li><a href="https://github.com/Swapnil-Mhatre/tic-tac-toe"><i
+                                                class="ri-github-fill"></i></a></li>
+                                    <li><a href="https://swapnil-mhatre.github.io/tic-tac-toe/"><i
+                                                class="ri-share-box-line"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="tags flex gap-1 flex-wrap">
+                                <div class="w-fit flex items-center gap-1 border py-1 px-2 rounded-full">
+                                    <div class="h-3 w-3">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" alt=""
+                                            class="h-full w-full object-cover">
+                                    </div>
+                                    <h4 class="font-semibold text-xs">HTML</h4>
+                                </div>
+                                <div class="w-fit flex items-center gap-1 border py-1 px-2 rounded-full">
+                                    <div class="h-3 w-3">
+                                        <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt=""
+                                            class="h-full w-full object-cover">
+                                    </div>
+                                    <h4 class="font-semibold text-xs">CSS</h4>
+                                </div>
+                                <div class="w-fit flex items-center gap-1 border py-1 px-2 rounded-full">
+                                    <div class="h-3 w-3">
+                                        <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt=""
+                                            class="h-full w-full object-cover">
+                                    </div>
+                                    <h4 class="font-semibold text-xs">JS</h4>
+                                </div>
+                            </div>
+                            <div class="info text-sm mt-3">A basic Tic Tac Toe Game Made as a practice of JavaScript
+                                Language with the concept of dom manipulation ,loops and functions.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project border rounded-sm p-1">
+                        <div class="h-60 w-full lg:h-70 xl:h-85">
+                            <a href="https://swapnil-mhatre.github.io/Bubble-Game/">
+                                <img class="w-full h-full object-cover rounded-sm" src="./Assets/Images/Bubble Game.png"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="px-3">
+                            <div class="description flex justify-between my-2">
+                                <p class="text-lg">Bubble Game</p>
+                                <ul class="flex gap-3 text-xl">
+                                    <li><a href="https://github.com/Swapnil-Mhatre/Bubble-Game"><i
+                                                class="ri-github-fill"></i></a></li>
+                                    <li><a href="https://swapnil-mhatre.github.io/Bubble-Game/"><i
+                                                class="ri-share-box-line"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="tags flex gap-1 flex-wrap">
+                                <div class="w-fit flex items-center gap-1 border py-1 px-2 rounded-full">
+                                    <div class="h-3 w-3">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" alt=""
+                                            class="h-full w-full object-cover">
+                                    </div>
+                                    <h4 class="font-semibold text-xs">HTML</h4>
+                                </div>
+                                <div class="w-fit flex items-center gap-1 border py-1 px-2 rounded-full">
+                                    <div class="h-3 w-3">
+                                        <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt=""
+                                            class="h-full w-full object-cover">
+                                    </div>
+                                    <h4 class="font-semibold text-xs">CSS</h4>
+                                </div>
+                                <div class="w-fit flex items-center gap-1 border py-1 px-2 rounded-full">
+                                    <div class="h-3 w-3">
+                                        <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt=""
+                                            class="h-full w-full object-cover">
+                                    </div>
+                                    <h4 class="font-semibold text-xs">JS</h4>
+                                </div>
+                            </div>
+                            <div class="info text-sm mt-3">This was made with the tutorial from sheriyan coding schools
+                                to practise the dom manipulation for the frontend
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project border rounded-sm p-1">
+                        <div class="h-60 w-full lg:h-70 xl:h-85">
+                            <a href="https://swapnil-mhatre.github.io/Restaurant-Page/">
+                                <img class="w-full h-full object-cover rounded-sm"
+                                    src="./Assets/Images/Restaurant Page.png" alt="">
+                            </a>
+                        </div>
+                        <div class="px-3">
+                            <div class="description flex justify-between my-2">
+                                <p class="text-lg">Restaurant Page</p>
+                                <ul class="flex gap-3 text-xl">
+                                    <li><a href="https://github.com/Swapnil-Mhatre/Restaurant-Page"><i class="ri-github-fill"></i></a></li>
+                                    <li><a href="https://swapnil-mhatre.github.io/Restaurant-Page/"><i class="ri-share-box-line"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="tags flex gap-1 flex-wrap">
+                                <div class="w-fit flex items-center gap-1 border py-1 px-2 rounded-full">
+                                    <div class="h-3 w-3">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" alt=""
+                                            class="h-full w-full object-cover">
+                                    </div>
+                                    <h4 class="font-semibold text-xs">HTML</h4>
+                                </div>
+                                <div class="w-fit flex items-center gap-1 border py-1 px-2 rounded-full">
+                                    <div class="h-3 w-3">
+                                        <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt=""
+                                            class="h-full w-full object-cover">
+                                    </div>
+                                    <h4 class="font-semibold text-xs">CSS</h4>
+                                </div>
+                                <div class="w-fit flex items-center gap-1 border py-1 px-2 rounded-full">
+                                    <div class="h-3 w-3">
+                                        <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt=""
+                                            class="h-full w-full object-cover">
+                                    </div>
+                                    <h4 class="font-semibold text-xs">JS</h4>
+                                </div>
+                                <div class="w-fit flex items-center gap-1 border py-1 px-2 rounded-full">
+                                    <div class="h-3 w-3">
+                                        <img src="https://icons.veryicon.com/png/o/business/vscode-program-item-icon/webpack-2.png"
+                                            alt="" class="h-full w-full object-cover">
+                                    </div>
+                                    <h4 class="font-semibold text-xs">Webpack</h4>
+                                </div>
+                            </div>
+                            <div class="info text-sm mt-3">Restaurant Page Project Challenge Given By the odin project
+                                for having the grasp on webpack and Javascript.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="w-full px-4 py-10" id="Contact">
+                <h1 class="heading-title text-4xl font-bold my-8 md:my-12 lg:my-10">Contact Me</h1>
+                <div class="contact">
+                    <p class="text-lg font-semibold md:text-2xl md:text-center">Have <span
+                            class="text-blue-500">Question's</span> on your mind ??</p>
+                    <p class="my-4 font-medium md:text-xl">Connect with me on :</p>
+                    <ul class="text-lg gap-2 grid grid-cols-1 md:grid-cols-2 md:text-xl md:gap-5 lg:text-2xl">
+                        <li><a href="https://www.instagram.com/swap_nil_mhatre21/" target="_blank"><i
+                                    class="ri-instagram-fill"></i> <span>Instagram</span></a></li>
+                        <li><a href="https://github.com/Swapnil-Mhatre" target="_blank"><i class="ri-github-fill"></i>
+                                <span>Github</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/swapnil-mhatre-5160b3296/" target="_blank"><i
+                                    class="ri-linkedin-box-fill"></i> <span>Linked In</span></a></li>
+                        <li><a href="mailto:swapnilmhatre889@gmail.com" target="_blank"><i class="ri-mail-fill"></i>
+                                <span>swapnilmhatre889@gmail.com</span></a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <footer class="bg-black text-stone-100 h-10 w-full flex justify-center items-center font-semibold"><a
+                href="#Home">@2025 Swapnil Mhatre</a></footer>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
